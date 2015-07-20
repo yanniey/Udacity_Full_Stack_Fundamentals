@@ -1,8 +1,9 @@
-from sqlalchemy import asc
+Problem Set 1 
 
 ### Query all of the puppies and return the results in ascending alphabetical order
 
 ```
+from sqlalchemy import asc
 >>> for puppy in session.query(Puppy).order_by(Puppy.name):
 ...     print puppy.name
 ...     print "\n"

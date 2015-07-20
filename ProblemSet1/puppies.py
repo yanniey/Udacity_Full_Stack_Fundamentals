@@ -14,6 +14,8 @@ class Shelter(Base):
     state = Column(String(20))
     zipCode = Column(String(10))
     website = Column(String)
+    maximum_capacity = Column(String(10))
+    current_occupancy = Column(String(10),nullable = False)
     
 class Puppy(Base):
     __tablename__ = 'puppy'
