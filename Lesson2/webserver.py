@@ -40,7 +40,6 @@ class webServerHandler(BaseHTTPRequestHandler):
             if self.path.endswith("/restaurants"):
                 restaurants = session.query(Restaurant).all()
                 output = ""
-                # Objective 3 Step 1 - Create a Link to create a new menu item
                 output += "<a href = '/restaurants/new' > Make a New Restaurant Here </a></br></br>"
 
                 self.send_response(200)
@@ -50,8 +49,6 @@ class webServerHandler(BaseHTTPRequestHandler):
                 for restaurant in restaurants:
                     output += restaurant.name
                     output += "</br>"
-                    # Objective 2 -- Add Edit and Delete Links
-                    # Objective 4 -- Replace Edit href
                     output += "<a href ='/restaurants/%s/edit' >Edit </a> " % restaurant.id
                     output += "</br>"
                     output += "<a href =' #'> Delete </a>"
