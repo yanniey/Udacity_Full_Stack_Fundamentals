@@ -92,7 +92,7 @@ class webServerHandler(BaseHTTPRequestHandler):
 
         	
 
-
+            # HelloWorld function
         	# if self.path.endswith("/hello"):
          #        self.send_response(200)
          #        self.send_header('Content-type', 'text/html')
