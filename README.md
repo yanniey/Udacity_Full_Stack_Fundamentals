@@ -4,6 +4,7 @@
 Python + SQLAlchemy + MySql+ Flask
 
 Lesson 1, completed 07/16/2015
+
 Lesson 2, completed 07/21/2015
 
 ## Syllabus
