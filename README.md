@@ -35,6 +35,7 @@ Flask functions:
 + `@app.route('/',method=['GET','POST'])`
 + `render_template`
 + `url_for()`
++ `redirect(url_for('restaurantMenu',restaurant_id=restaurant_id))`
 
 ---
 
