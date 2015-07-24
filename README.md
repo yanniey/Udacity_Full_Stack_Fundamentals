@@ -27,6 +27,17 @@ In the last lesson, you will build an entire web application on your own. You wi
 
 ---
 
+Lesson 3 Notes
+
+Using Flask: views are under the `templates` folder, call with `render_template(template,variable)`
+
+Flask functions: 
++ `@app.route('/',method=['GET','POST'])`
++ `render_template`
++ `url_for()`
+
+---
+
 Lesson 1 Notes
 
 ## Setup
