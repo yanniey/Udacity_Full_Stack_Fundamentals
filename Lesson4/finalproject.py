@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 app = Flask(__name__)
-
+ 
 
 # Fake Restaurants
 restaurant = {'name': 'The CRUDdy Crab', 'id': '1'}
@@ -25,7 +25,7 @@ item =  {'name':'Cheese Pizza','description':'made with fresh cheese','price':'$
 @app.route("/restaurant/")
 def showRestaurants():
 	# this page will show all the restaurants
-	return render_template("restaurants.html",restaurants=restaurants)
+	return render_template("restaurants.html",restaurants=restaurants,items=items)
 
 @app.route("/restaurant/new/")
 def newRestaurant():

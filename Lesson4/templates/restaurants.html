@@ -1,1 +1,16 @@
-<p>Restaurants.html</p>
+<html>
+	<head>
+		<link rel=stylesheet type = text/css href="{{url_for('static',filename='main.css')}}">
+	</head>
+	<body>
+		<p>Restaurants.html</p>
+		<h1>{{restaurant.name}}</h1>
+			<ul>
+			{% for i in items %}
+				<li><strong>{% i.name %}</strong></li>
+				<li>{% i.description %}</li>
+				<li>{% i.price %}</li>
+			{% endfor%}
+			</ul>
+	</body>
+</html>
