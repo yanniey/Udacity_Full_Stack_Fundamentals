@@ -9,7 +9,7 @@ Lesson 2, completed 07/21/2015
 
 Lesson 3, completed 07/26/2015
 
-Lesson 4, ongoing
+Lesson 4, ongoing 
 
 ---
 
