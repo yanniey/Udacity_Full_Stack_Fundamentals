@@ -1,4 +1,4 @@
-# UD088 - Udacity's Full Stack Fundamentals course
+# UD088 - Udacity's Full Stack Foundations course
 [Course Link](https://www.udacity.com/course/full-stack-foundations--ud088)
 
 Python + SQLAlchemy + MySql+ Flask
@@ -9,7 +9,7 @@ Lesson 2, completed 07/21/2015
 
 Lesson 3, completed 07/26/2015
 
-Lesson 4, ongoing 
+Lesson 4, completed 08/09/2015
 
 ---
 

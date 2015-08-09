@@ -4,10 +4,21 @@
 	</head>
 	<body>
 		<h1>New Menu Item</h1>
-		<form action='' method='POST'>
+		<form action='{{url_for("newMenuItem", restaurant_id=restaurant_id )}}' method='POST'>
 			<p>Name:</p>
-				<input type='text' size='30' name='name'>
+			<input type = 'text' size='30' name = 'name' placeholder = 'Garbage'>
+			<p>Description: </p>
+			<input type = 'text' size='30' name = 'description' placeholder = 'Crappy food made quickly'>
+			<p>Price: </p>
+			<input type = 'text' size='30' name = 'price' placeholder = "Not as cheap as you'd think"><br>
+			<p>Catagory</p>
+			<input type="checkbox" name="check" value="Bike" > Appetizer<br>
+			<input type="checkbox" name="check" value="Entree"> Entree<br>
+			<input type="checkbox" name="check" value="Dessert"> Dessert<br>
+			<input type="checkbox" name="check" value="Beverage"> Beverage<br>
+			<br>
 			<input type='submit' value='Create'>
+			<a href = "{{url_for('showMenu', restaurant_id=restaurant_id)}}">Cancel</a> 
 		</form>
 	</body>
 </html>

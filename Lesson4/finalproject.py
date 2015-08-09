@@ -91,13 +91,14 @@ def deleteRestaurant(restaurant_id):
 def showMenu(restaurant_id):
 	restaurant = session.query(Restaurant).filter_by(id = restaurant_id).one()
 	items = session.query(MenuItem).filter_by(restaurant_id = restaurant_id).all()
-	return render_template("showMenu.html",restaurant=restaurant)
+	return render_template("showMenu.html",items=items,restaurant=restaurant)
 
 # create a new menu item
 @app.route("/restaurant/<int:restaurant_id>/menu/new/", methods = ['GET','POST'])
 def newMenuItem(restaurant_id):
 	if request.method == 'POST':
-		newItem = MenuItem(name = request.form['name'],description = request.form['description'],price = request.form['price'],course = request.form['course'],restaurant_id = restaurant_id)
+		itemType = request.form.getlist('check') 
+		newItem = MenuItem(name = request.form['name'],description = request.form['description'],price = request.form['price'],course = itemType[0],restaurant_id = restaurant_id)
 		session.add(newItem)
 		session.commit()
 		return redirect(url_for("showMenu",restaurant_id = restaurant_id))
@@ -117,7 +118,7 @@ def editMenuItem(restaurant_id,menu_id):
 			editItem.price = request.form['price']
 		if request.form['course']:
 			editItem.course = request.form['course']
-		session.add(editMenuItem)
+		session.add(editItem)
 		session.commit()
 		return redirect(url_for('showMenu',restaurant_id = restaurant_id))
 	else:
