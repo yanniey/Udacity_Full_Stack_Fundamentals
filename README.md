@@ -7,8 +7,11 @@ Version1 Printscreen:
 ![Version1](https://github.com/yanniey/Udacity_Full_Stack_Fundamentals/blob/master/Version1.png?raw=true)
 
 Lesson 1, completed 07/16/2015
+
 Lesson 2, completed 07/21/2015
+
 Lesson 3, completed 07/26/2015
+
 Lesson 4, completed 08/09/2015
 
 ---
