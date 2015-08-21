@@ -3,8 +3,8 @@
 
 Python + SQLAlchemy + MySql+ Flask
 
-Version1 Printscreen:
-![Version1](https://github.com/yanniey/Udacity_Full_Stack_Fundamentals/blob/master/Version1.png?raw=true)
+Version1 Before and After my custom CSS:
+![Version1](https://github.com/yanniey/Udacity_Full_Stack_Fundamentals/blob/master/Version1.gif?raw=true)
 
 Lesson 1, completed 07/16/2015
 
